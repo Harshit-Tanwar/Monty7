@@ -27,14 +27,14 @@ const SignUp = () => {
       setEmailError("Invalid name");
       isValid = false;
     } else {
-      setPasswordError("");
+      setEmailError("");
     }
 
     if (!password) {
       setPasswordError("Enter Password");
       isValid = false;
     } else if (!passwordRegex.test(password)) {
-      setPasswordError("Incorrect Password");
+      setPasswordError("Invalid Password");
       isValid = false;
     } else {
       setPasswordError("");
@@ -60,7 +60,7 @@ const SignUp = () => {
   };
 
   const handleRedirect = () => {
-    navigate("/login");
+    navigate("/");
   };
 
   return (
