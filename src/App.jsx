@@ -15,7 +15,7 @@ const App = () => {
         backgroundRepeat : 'no-repeat',
     }
   return (
-    <div style={backImage}>
+    <div style={backImage} className="relative">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
