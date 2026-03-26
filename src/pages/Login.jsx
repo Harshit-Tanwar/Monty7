@@ -8,7 +8,7 @@ const Login = () => {
   const [userError, setuserError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-  const userRegex = /(^[a-zA-Z0-9_]{3,20}$) | (^[6-9]\d{9}$)/;
+  const userRegex = /(^[a-zA-Z0-9_]{3,20}$)|(^[6-9]\d{9}$)/;
   const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$/;
 
   const validateForm = () => {
@@ -18,7 +18,7 @@ const Login = () => {
       setuserError("Invalid name");
       isValid = false;
     } else {
-      setPasswordError("");
+      setuserError("");
     }
     if (!passwordRegex.test(password)) {
       setPasswordError("Incorrect Password");

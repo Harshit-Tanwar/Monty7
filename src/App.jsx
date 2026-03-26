@@ -18,7 +18,7 @@ const App = () => {
     <div style={backImage}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<SignUp />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
